@@ -4,7 +4,6 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        // Essa linha é o "manual" que estava faltando
         classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
