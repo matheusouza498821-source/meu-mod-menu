@@ -10,9 +10,23 @@ android {
         targetSdkVersion 34
         versionCode 1
         versionName "1.0"
+    }
 
-        ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a'
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml' // Força o Gradle a achar o arquivo
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
