@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.android.support"
+    namespace 'com.android.support'
     compileSdk 34
 
     defaultConfig {
