@@ -14,7 +14,7 @@ android {
 
     sourceSets {
         main {
-            manifest.srcFile 'AndroidManifest.xml' // Força o Gradle a achar o arquivo
+            manifest.srcFile 'AndroidManifest.xml'
         }
     }
 
